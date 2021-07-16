@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 10px auto;
+  border: 1px solid grey;
+  padding: 20px;
+  width: 80%;
+}
+.header h2 {
+  color: grey;
+}
+.header span {
+  color: grey;
+  font-size: 10px;
+}
+
+.header form {
+  max-width: 100%;
+}
+
+.header form label,
+.lab-filter {
+  font-size: 15px;
+  color: grey;
+  position: relative;
+  bottom: -12px;
+}
+
+.header form input[type="submit"] {
+  display: block;
+  background-color: transparent;
+  margin-top: 20px;
+  padding: 5px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+form input[type="text"],
+#filter {
+  border: none;
+  color: gray !important;
+  border-bottom: 1px solid black;
+  width: 100%;
+  font-size: 15px;
+  background-color: transparent !important;
+}
+.header form input[type="text"]:focus,
+#filter:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.main h2 {
+  color: grey;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.main ul {
+  border: 1px solid grey;
+}
+.main ul li {
+  padding: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+.main ul li a {
+  background-color: transparent;
+  height: 10px;
+  width: 10px;
+}
+.main ul li a i {
+  color: gold;
+  font-size: 15px;
+}
+.main ul li:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
+
+.main .clear {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+}

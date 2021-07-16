@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>Task List</h2>
+        <span>new task</span>
+       <form style="margin-bottom: 30px;">
+        <div style="margin-top: 10px;">
+            <label for="let" class="first-lab">Type Here</label>
+           <input id="let" type="text" class="inp">
+        </div>
+        <input class="add" type="submit" value="Add Task"></input>
+       </form>
+       <hr>
+     <div style="margin-top: 20px;">
+         <h2 id="task-title">Tasks</h2>
+         <div style="margin-top: 10px;">
+            <label for="filter" class="lab-filter"> Filter tasks</label>
+           <input id="filter" type="text" name="filter">
+        </div>
+     </div>
+    </div>
+    <div class="main">
+   
+   
+   <ul class="collection"></ul>
+   
+   <input type="submit" class="clear" value="Clear Tasks">
+    </div>
+</div>
+
+
+<script src="js/test.js" defer="true"></script>
+</body>
+</html>
