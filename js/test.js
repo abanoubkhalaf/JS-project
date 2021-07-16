@@ -38,11 +38,6 @@ filter.addEventListener('blur', function () {
   }
 })
 
-
-
-
-
-
 loadEventListeners();
 
 function loadEventListeners() {
@@ -90,20 +85,15 @@ if (taskInput.value === ""){
  link.className = 'delete-item secondary-content'
  link.innerHTML = '<i class="fas fa-minus-circle"></i>'
  li.appendChild(link);
-
  taskLikst.appendChild(li);
- 
-
-
  storeTaskInLocalStorge(taskInput.value);
 }
 document.getElementById('real-label').style.bottom ='-12px';
-document.getElementById(".real-label").style.color = 'grey';
+document.getElementById('real-label').style.color = 'grey';
 form.reset();
 
  e.preventDefault();
 }
-
 
 function storeTaskInLocalStorge(task) {
   let tasks;
@@ -116,9 +106,7 @@ function storeTaskInLocalStorge(task) {
   tasks.push(task);
 
   localStorage.setItem('tasks' , JSON.stringify(tasks));
-
 }
-
 
 function removeTask(e) {
   if (e.target.classList.contains("fa-minus-circle")) {
@@ -146,12 +134,10 @@ function removeTaskFromLocalStorge(taskItem) {
   
 }
 
-
 function clearTask() {
 
   while (taskLikst.firstChild) {
     taskLikst.removeChild(taskLikst.firstChild);
-    
   }
   clearTasksFromLocalStorage();
 }
