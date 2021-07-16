@@ -1,3 +1,4 @@
+
 const form = document.querySelector('form');
 const taskLikst = document.querySelector('.collection')
 const clearBtn = document.querySelector('.clear');
@@ -37,6 +38,11 @@ filter.addEventListener('blur', function () {
     document.querySelector(".lab-filter").style.bottom = '0px';
   }
 })
+
+
+
+
+
 
 loadEventListeners();
 
@@ -85,7 +91,11 @@ if (taskInput.value === ""){
  link.className = 'delete-item secondary-content'
  link.innerHTML = '<i class="fas fa-minus-circle"></i>'
  li.appendChild(link);
+
  taskLikst.appendChild(li);
+ 
+
+
  storeTaskInLocalStorge(taskInput.value);
 }
 document.getElementById('real-label').style.bottom ='-12px';
@@ -94,6 +104,7 @@ form.reset();
 
  e.preventDefault();
 }
+
 
 function storeTaskInLocalStorge(task) {
   let tasks;
@@ -106,7 +117,9 @@ function storeTaskInLocalStorge(task) {
   tasks.push(task);
 
   localStorage.setItem('tasks' , JSON.stringify(tasks));
+
 }
+
 
 function removeTask(e) {
   if (e.target.classList.contains("fa-minus-circle")) {
@@ -134,10 +147,12 @@ function removeTaskFromLocalStorge(taskItem) {
   
 }
 
+
 function clearTask() {
 
   while (taskLikst.firstChild) {
     taskLikst.removeChild(taskLikst.firstChild);
+    
   }
   clearTasksFromLocalStorage();
 }
